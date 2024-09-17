@@ -1,0 +1,57 @@
+{
+  "deno.enable": true,
+  "deno.lint": true,
+  "editor.defaultFormatter": "denoland.vscode-deno",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "css.customData": [
+    ".vscode/tailwind.json"
+  ],
+  "workbench.editor.customLabels.patterns": {
+    "**/components/Atoms/**/index.tsx": "-atm <${dirname} />",
+    "**/components/Atoms/**/*.style.tsx": "-atm <${filename}.style /> ${dirname}",
+    "**/components/Atoms/**/*.tsx": "-atm <${filename} /> ${dirname}",
+    "**/components/Atoms/**/utils.tsx": "-atm 🔅${filename} ${dirname}",
+    "**/components/Organisms/**/index.tsx": "++ORG <${dirname} />",
+    "**/components/Organisms/**/*.style.tsx": "++ORG <${filename}.style /> ${dirname}",
+    "**/components/Organisms/**/*.tsx": "++ORG <${filename} /> ${dirname}",
+    "**/components/Organisms/**/utils.tsx": "++ORG 🔅${filename} ${dirname}",
+    "**/components/Organisms/**/helper.tsx": "++ORG 🔅${filename} ${dirname}",
+    "**/components/Molecules/**/index.tsx": "## Mol <${dirname} />",
+    "**/components/Molecules/**/*.style.tsx": "## Mol <${filename}.style /> ${dirname}",
+    "**/components/Molecules/**/*.tsx": "## Mol <${filename} /> ${dirname}",
+    "**/components/Molecules/**/utils.tsx": "## Mol 🔅${filename} ${dirname}",
+    "**/components/Molecules/**/helper.tsx": "## Mol 🔅${filename} ${dirname}",
+    "**/components/Templates/**/index.tsx": "TMPL <${dirname} />",
+    "**/components/Templates/**/*.style.tsx": "TMPL <${filename}.style /> ${dirname}",
+    "**/components/Templates/**/*.tsx": "TMPL <${filename} /> ${dirname}",
+    "**/components/Templates/**/utils.tsx": "TMPL 🔅${filename} ${dirname}",
+    "**/components/**/index.tsx": "<${dirname} />",
+    "**/components/**/utils.tsx": "🔅${filename} ${dirname}",
+    "**/components/**/*.style.tsx": "<${filename}.style /> ${dirname}",
+    "**/components/**/use*.tsx": "hook: ${filename} ${dirname}",
+    "**/components/**/*.test.tsx": "<${filename} /> ${dirname}",
+    "**/components/**/*.tsx": "<${filename} /> ${dirname}",
+    "**/islands/**/index.tsx": "<${dirname} />",
+    "**/islands/**/utils.tsx": "🔅${filename} ${dirname}",
+    "**/islands/**/*.style.tsx": "<${filename}.style /> ${dirname}",
+    "**/islands/**/use*.tsx": "hook: ${filename} ${dirname}",
+    "**/islands/**/*.test.tsx": "<${filename} /> ${dirname}",
+    "**/islands/**/*.tsx": "<${filename} /> ${dirname}"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "never",
+    "source.sortImports": "explicit",
+  },
+}
